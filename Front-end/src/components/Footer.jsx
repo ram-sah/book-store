@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div>
             <hr />
-            <footer className="footer p-2 md:p-10 text-base-content max-w-screen-2xl mx-auto flex flex-wrap mt-4 justify-evenly ">
+            <footer className="footer p-2 md:p-10 text-base-content max-w-screen-2xl mx-auto flex flex-wrap mt-4 justify-evenly dark:text-white ">
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <a className="link link-hover">Branding</a>
@@ -29,7 +29,7 @@ const Footer = () => {
                     <h6 className="footer-title">Newsletter</h6>
                     <fieldset className="form-control w-aut">
                         <label className="label">
-                            <span className="label-text">Enter your email</span>
+                            <span className="label-text dark:text-white">Enter your email</span>
                         </label>
                         <div className="join">
                             <input type="text" placeholder="username@site.com" className="input input-bordered join-item" />

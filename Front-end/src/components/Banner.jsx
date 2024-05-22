@@ -4,8 +4,8 @@ import store from '../../public/store.avif'
 const Banner = () => {
     return (
         <>
-            <div className='max-w-screen-2xl mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 md:mt-40 justify-evenly '>
-                <div className=" w-full md:w-1/2 order-2 md:order-1 ">
+            <div className='max-w-screen-2xl mx-auto md:px-20 px-4 flex flex-col md:flex-row mt-20 md:mt-40 justify-evenly '>
+                <div className=" w-full md:w-1/2 order-2 md:order-1 my-10">
                     <h1 className=' text-2xl text-center md:text-5xl '>
                         Welcome to our Book Store, a haven for <span className='text-pink-600 leading-relaxed'>bibliophiles !</span>
                     </h1>

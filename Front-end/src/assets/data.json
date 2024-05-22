@@ -2,120 +2,138 @@
     {
         "id": "1",
         "title": "Unlocking Android",
-        "price": 416,
+        "price": 0,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg",
-        "category": "Free"
+        "category": "Free",
+        "description": "Unlocking Android: A Developer's Guide provides concise, hands-on instruction for the Android operating system."
     },
     {
         "id": "2",
         "title": "Android in Action, Second Edition",
         "price": 592,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg",
-        "category": "Java"
+        "category": "Java",
+        "description": "Android in Action, Second Edition is a comprehensive tutorial for Android developers."
     },
     {
         "id": "3",
         "title": "Specification by Example",
         "price": 0,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg",
-        "category": "Free"
+        "category": "Free",
+        "description": "New web applications require engaging user-friendly interfaces   and the cooler, the better. "
     },
     {
         "id": "4 ",
         "title": "Flex 3 in Action",
         "price": 50,
-        "thumb  nailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
-        "category": "Internet"
+        "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
+        "category": "Internet",
+        "description": "Using Flex, you can create high-quality, effective, and interactive Rich Internet Applications (RIAs) quickly and easily."
     },
-    {
-        "id": "5 ",
-        "title": "Flex 4 in Action",
-        "price": 63,
-        "thumb  nailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg",
-        "category": "Free"
-    },
+
     {
         "id": "6 ",
         "title": "Collective Intelligence in Action",
         "price": 234,
-        "thumb  nailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alag.jpg",
-        "category": "Internet"
+        "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alag.jpg",
+        "category": "Internet",
+        "description": "Zend Framework in Action is a comprehensive tutorial that shows how to use the Zend Framework to create web-based applications."
     },
     {
         "id": "7",
         "title": "Zend Framework in Action",
         "price": 432,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg",
-        "category": "Web-Development"
+        "category": "WebDev",
+        "description": "A beautifully written book that is a must have for every Java Developer."
     },
     {
         "id": "8",
         "title": "Flex on Java",
         "price": 265,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg",
-        "category": "Java"
+        "category": "Java",
+        "description": "Griffon in Action is a comprehensive tutorial written for Java developers who want a more productive approach to UI development."
     },
     {
         "id": "9",
         "title": "Griffon in Action",
         "price": 375,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/almiray.jpg",
-        "category": "JavaScript"
+        "category": "software",
+        "description": "Enterprise OSGi shows a Java developer how to develop to the OSGi Service Platform Enterprise specification"
     },
     {
         "id": "10",
         "title": "OSGi in Depth",
         "price": 325,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alves.jpg",
-        "category": "OSGI"
+        "category": "OSGI",
+        "description": "Flexible Rails created a standard to which I hold other technical books. You definitely get your money's worth.\""
     },
     {
         "id": "11",
         "title": "Flexible Rails",
         "price": 592,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong.jpg",
-        "category": "Web-Development"
+        "category": "Web-Dev",
+        "description": "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex."
     },
     {
         "id": "12",
         "title": "Hello! Flex 4",
         "price": 258,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong3.jpg",
-        "category": "CSS"
+        "category": "CSS",
+        "description": "With Flex 4 you can easily add color and life to your web applications by introducing dynamic user features"
     },
     {
         "id": "13",
         "title": "Coffeehouse",
-        "price": 316,
+        "price": 0,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/asher.jpg",
-        "category": "Free"
+        "category": "Free",
+        "description": "Coffeehouse is an anthology of stories, poems and essays originally published on the World Wide Web."
     },
     {
         "id": "14",
         "title": "Team Foundation Server 2008 in Action",
         "price": 121,
-        "thumb  nailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg",
-        "category": "Microsoft_.NET"
+        "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/azher.jpg",
+        "category": "Microsoft.NET",
+        "description": "In complex software projects, managing the development process can be as critical to success as writing the code"
     },
     {
         "id": "15",
         "title": "Brownfield Application Development in .NET",
         "price": 550,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/baley.jpg",
-        "category": "Microsoft"
+        "category": "Microsoft",
+        "description": "Brownfield Application Development in .Net shows you how to approach legacy applications with the state-of-the-art"
+    },
+    {
+        "id": "5 ",
+        "title": "Flex 4 in Action",
+        "price": 0,
+        "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg",
+        "category": "Free",
+        "description": "There's a great deal of wisdom in a crowd, but how do you listen to a thousand people talking at once... "
     },
     {
         "id": "16",
         "title": "MongoDB in Action",
         "price": 110,
         "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/banker.jpg",
-        "category": "Next_Generation_Databases"
+        "category": "Databases",
+        "description": "MongoDB In Action is a comprehensive guide to MongoDB for application developers. "
     },
     {
         "id": "17",
         "title": "Jaguar Development with PowerBuilder 7",
         "price": 550,
-        "image": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barlotta2.jpg",
-        "category": "PowerBuilder"
+        "image": "https://i.ytimg.com/vi/Xv24Iz_M8rQ/maxresdefault.jpg",
+        "category": "MongoDB",
+        "description": "Distributed Application Development with PowerBuilder 6.0 is a vital source for the PowerBuilder programmer."
     }
 ]
