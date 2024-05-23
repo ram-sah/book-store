@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Login from "./Login";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -93,11 +94,11 @@ const Navbar = () => {
             </ul>
           </div>
           {/* search box */}
-          <div className="hidden md:block ">
+          <div className="hidden md:block dark:bg-slate-500 dark:text-white">
             <label className="border rounded-md flex items-center gap-2 ">
               <input
                 type="text"
-                className="grow outline-none p-2 rounded-md "
+                className="grow outline-none p-2 rounded-md dark:bg-slate-500 dark:text-white"
                 placeholder="Search"
               />
               <svg
@@ -157,9 +158,12 @@ const Navbar = () => {
             </label>
           </div>
           <div className="">
-            <a className=" bg-red-500 px-3 py-2 rounded-md mx-4 text-white cursor-pointer hover:bg-red-800">
+            <a className=" bg-red-500 px-3 py-2 rounded-md mx-4 text-white cursor-pointer hover:bg-red-800"
+            onClick={()=>document.getElementById("my_modal_3").showModal()}
+            >
               Login
             </a>
+            <Login />
           </div>
         </div>
       </div>

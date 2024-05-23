@@ -29,11 +29,11 @@ const Footer = () => {
                     <h6 className="footer-title">Newsletter</h6>
                     <fieldset className="form-control w-aut">
                         <label className="label">
-                            <span className="label-text dark:text-white">Enter your email</span>
+                            <span className="label-text dark:text-white ">Enter your email</span>
                         </label>
-                        <div className="join">
-                            <input type="text" placeholder="username@site.com" className="input input-bordered join-item" />
-                            <button className="btn btn-primary join-item">Subscribe</button>
+                        <div className="join ">
+                            <input type="text" placeholder="username@site.com" className="input input-bordered join-item dark:bg-slate-500 dark:text-white" />
+                            <button className="btn btn-primary join-item ">Subscribe</button>
                         </div>
                     </fieldset>
                 </form>

@@ -43,12 +43,12 @@ const FreeBooks = () => {
     };
     return (
         <>
-            <dir className="max-w-screen-2xl mx-auto md:px-20 px-4 flex flex-col my-10 md:mt-20 justify-evenly ">
+            <dir className=" max-w-screen-2xl mx-auto md:px-20 px-4 flex flex-col my-10 md:mt-20 justify-evenly ">
                 <h1 className=' text-2xl font-semibold'>Free Offered Books</h1>
                 <p className='mt-10 text-justify text-sm md:text-lg'>Free Books also we host regular events such as author signings, book clubs, and reading sessions to foster a vibrant literary community.
                     Visit us to explore, discover, and immerse yourself in the world of books.</p>
-                <div className=' my-20 gap-6'>
-                    <Slider {...settings}>
+                <div className=' my-20 gap-6 '>
+                    <Slider {...settings} >
                         {freeData.map((item) => (
                             <Cards item={item} key={item.id} />
                         ))}

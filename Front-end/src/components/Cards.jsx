@@ -5,7 +5,7 @@ const Cards = ({ item }) => {
 
     return (
         <>
-            <div className='border w-96 mx-auto bg-base-100 shadow-xl rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 dark:bg-slate-500 dark:text-white'>
+            <div className='border w-96 mx-auto bg-base-100 shadow-xl rounded-lg transform transition-transform duration-300 hover:scale-105 dark:bg-slate-500 dark:text-white'>
                 <div className="card w-96 flex justify-evenly items-center text-justify" style={{ "height": "400px" }}>
                     <figure className="relative w-72 ">
                         <img src={item.image} alt="book image" className="object-cover object-top w-full h-full" />
