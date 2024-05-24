@@ -23,7 +23,7 @@ const Navbar = () => {
   //nav scrolling
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 50) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -135,7 +135,8 @@ const Navbar = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+
               >
                 <circle cx="12" cy="12" r="5" />
                 <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
@@ -151,7 +152,7 @@ const Navbar = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               >
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
               </svg>
@@ -159,7 +160,7 @@ const Navbar = () => {
           </div>
           <div className="">
             <a className=" bg-red-500 px-3 py-2 rounded-md mx-4 text-white cursor-pointer hover:bg-red-800"
-            onClick={()=>document.getElementById("my_modal_3").showModal()}
+              onClick={() => document.getElementById("my_modal_3").showModal()}
             >
               Login
             </a>
