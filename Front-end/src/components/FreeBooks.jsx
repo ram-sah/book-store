@@ -1,12 +1,26 @@
-import React from 'react'
-import data from '../assets/data';
+import React, { useEffect, useState } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cards from './Cards';
+import axios from 'axios';
 
 const FreeBooks = () => {
-    const freeData = data.filter((e) => e.category === "Free");
+    const [book, setBook] = useState([])
+
+    useEffect(() => {
+        const getBook = async () => {
+            try {
+                const res = await axios.get("http://localhost:4001/book");
+                console.log(res.data.filter((e) => e.category === "Free"));
+                setBook(res.data.filter((e) => e.category === "Free"));
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        getBook();
+    }, [])
+
     var settings = {
         dots: true,
         infinite: false,
@@ -43,13 +57,13 @@ const FreeBooks = () => {
     };
     return (
         <>
-            <dir className=" max-w-screen-2xl mx-auto md:px-20 px-4 flex flex-col my-10 md:mt-20 justify-evenly ">
+            <dir className=" max-w-screen-2xl mx-auto md:px-20 px-4  my-10 md:mt-20 justify-evenly ">
                 <h1 className=' text-2xl font-semibold'>Free Offered Books</h1>
                 <p className='mt-10 text-justify text-sm md:text-lg'>Free Books also we host regular events such as author signings, book clubs, and reading sessions to foster a vibrant literary community.
                     Visit us to explore, discover, and immerse yourself in the world of books.</p>
-                <div className=' my-20 gap-6 '>
+                <div className=' my-20 '>
                     <Slider {...settings} >
-                        {freeData.map((item) => (
+                        {book.map((item) => (
                             <Cards item={item} key={item.id} />
                         ))}
                     </Slider>

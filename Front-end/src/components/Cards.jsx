@@ -5,16 +5,17 @@ const Cards = ({ item }) => {
 
     return (
         <>
-            <div className='border w-96 mx-auto bg-base-100 shadow-xl rounded-lg transform transition-transform duration-300 hover:scale-105 dark:bg-slate-500 dark:text-white'>
-                <div className="card w-96 flex justify-evenly items-center text-justify" style={{ "height": "400px" }}>
-                    <figure className="relative w-72 ">
+            <div className='border w-96 md:w-full mx-auto bg-base-100 shadow-xl rounded-2xl transform transition-transform duration-300 hover:scale-105 dark:bg-slate-500 dark:text-white'>
+                <div className="card w-full justify-evenly items-center text-justify" style={{ "height": "400px" }}>
+                    <figure className="relative w-full ">
                         <img src={item.image} alt="book image" className="object-cover object-top w-full h-full" />
                     </figure>
-                    <div className="card-body">
-                        <h2 className="card-title">
-                            {item.title}
-                            <div className="badge badge-secondary">{item.category}</div>
-                        </h2>
+                    <div className="card-body ">
+                        <div className='flex justify-between gap-4'>
+                            <h2 className="card-title">
+                                {item.title} </h2>
+                            <h4 className="badge badge-secondary">{item.category}</h4>
+                        </div>
                         <p>{item.description}</p>
                         <div className="card-actions pt-2 justify-between">
                             <div className="badge badge-outline p-3">${item.price}</div>

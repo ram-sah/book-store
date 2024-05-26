@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import bookRoute from './route/book-route.js';
+import userRoute from './route/user-route.js';
 import cors from 'cors';
 
 dotenv.config()
@@ -29,6 +30,7 @@ console.log("Error", error)
 
 //defining routes
 app.use('/book', bookRoute);
+app.use('/user', userRoute);
 
 // //testing routes
 // app.post('/test', (req, res) => {

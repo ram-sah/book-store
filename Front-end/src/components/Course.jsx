@@ -33,13 +33,14 @@ const Course = () => {
                         <button className='px-3 py-1 bg-pink-500 hover:bg-pink-700 rounded-md text-white duration-300 my-5 w-20' >Back</button>
                     </div>
                 </Link>
-                <div className='my-20 grid grid-cols-1 md:grid-cols-3 gap-6 '>
+                <div className='my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {
                         book.map((course) => (
                             <Cards key={course.id} item={course} />
                         ))
                     }
                 </div>
+
             </div>
         </>
     )
