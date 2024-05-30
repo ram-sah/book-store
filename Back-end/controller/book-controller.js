@@ -23,15 +23,16 @@ export const getFreeBook = async (req, res) => {
 // Controller to add a new book
 export const addBook = async (req, res) => {
     try {
-        const { name, price, category, title, image } = req.body;
+        const {id, name, price, category, title, image } = req.body;
 
         // Validate input
-        if (!name || !price || !category || !title || !image) {
+        if (!id || !name || !price || !category || !title || !image) {
             return res.status(400).json({ message: 'All fields are required' });
         }
 
         // Create a new book instance
         const newBook = new Book({
+            id,
             name,
             price,
             category,

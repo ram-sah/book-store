@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import toast from 'react-hot-toast';
 
 const Login = () => {
     const {
@@ -15,16 +16,21 @@ const Login = () => {
             email: data.email,
             password: data.password,
         }
-        await axios.post("http://localhost:4001/user/login", userInfo)
+        await axios.post("/user/login", userInfo)
             .then((res) => {
                 console.log(res.data)
                 if (res.data) {
-                    alert("Login Successful");
+                    toast.success("Login Successful");
+                    document.getElementById("my_modal_3").close()
+                    setTimeout(() => {
+                        localStorage.setItem("Users", JSON.stringify(res.data.user));
+                        window.location.reload();
+                    }, 1000)
                 }
-                localStorage.setItem("Users", JSON.stringify(res.data.user));
             }).catch((err) => {
                 console.log(err)
-                alert("Error: " + err.response.data.message)
+                toast.error("Error: " + err.response.data.message)
+                setTimeout(() => { }, 2000);
             })
     }
     return (

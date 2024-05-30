@@ -17,12 +17,14 @@ export const signup = async (req, res) => {
             password: hashPassword,
         });
         await createdUser.save();
-        res.status(201).json({ message: "User created Successfully",
-        user:{
-            _id: createdUser._id,
-            full_name: createdUser.full_name,
-            email: createdUser.email,
-        } });
+        res.status(201).json({
+            message: "User created Successfully",
+            user: {
+                _id: createdUser._id,
+                full_name: createdUser.full_name,
+                email: createdUser.email,
+            }
+        });
     } catch (error) {
         console.log("Error" + error.message);
         res.status(500).json({ message: "Internal Server Error" });
@@ -51,6 +53,6 @@ export const login = async (req, res) => {
         }
     } catch (error) {
         console.log("Error: ", error.message);
-        res.status(500).json({ message: "Internal server error" });
+        res.status(500).json({ message: "Invalid password or user" });
     }
 };

@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import toast from "react-hot-toast";
+import { useAuth } from '../context/AuthProvider';
 
 const Signup = () => {
-    // handle input form from 'useForm react hook form'
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location.state?.from?.pathname || "/";
+
+    const [authUser, setAuthUser] = useAuth();
+    // handling input form from 'useForm react hook form'
     const {
         register,
         handleSubmit,
@@ -17,16 +24,21 @@ const Signup = () => {
             email: data.email,
             password: data.password,
         }
-        await axios.post("http://localhost:4001/user/signup", userInfo)
+        await axios.post("/user/signup", userInfo)
             .then((res) => {
                 console.log(res.data)
                 if (res.data) {
-                    alert("Signup Successful");
+                    toast.success("Signup Successful");
+                    setTimeout(() => {
+                        setAuthUser(res.data.user)
+                        localStorage.setItem("Users", JSON.stringify(res.data.user));
+                        window.location.reload();
+                    }, 1000)
+                    navigate(from, { replace: true });
                 }
-                localStorage.setItem("Users", JSON.stringify(res.data.user));
             }).catch((err) => {
                 console.log(err)
-                alert("Error: " + err.response.data.message)
+                toast.error("Error: " + err.response.data.message)
             })
     }
     return (
