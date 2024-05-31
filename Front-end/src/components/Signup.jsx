@@ -24,7 +24,7 @@ const Signup = () => {
             email: data.email,
             password: data.password,
         }
-        await axios.post("/user/signup", userInfo)
+        await axios.post(`${import.meta.env.MongoDbURL}/user/signup`, userInfo)
             .then((res) => {
                 console.log(res.data)
                 if (res.data) {

@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 import bookRoute from './route/book-route.js';
 import userRoute from './route/user-route.js';
 import cors from 'cors';
-import path from 'path'
+import path from 'path';
 
 dotenv.config()
 
