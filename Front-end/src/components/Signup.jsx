@@ -11,7 +11,7 @@ const Signup = () => {
     const navigate = useNavigate();
     const from = location.state?.from?.pathname || "/";
 
-    const [authUser, setAuthUser] = useAuth();
+   const [authUser, setAuthUser] = useAuth();
     // handling input form from 'useForm react hook form'
     const {
         register,
@@ -24,7 +24,7 @@ const Signup = () => {
             email: data.email,
             password: data.password,
         }
-        await axios.post(`${import.meta.env.MongoDbURL}/user/signup`, userInfo)
+        await axios.post("/user/signup", userInfo)
             .then((res) => {
                 console.log(res.data)
                 if (res.data) {

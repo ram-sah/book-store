@@ -44,11 +44,11 @@ app.use('/user', userRoute);
 
 //deployment
 if (process.env.NODE_ENV === 'production') {
-    const dirPath = path.resolve();
-    app.use(express.static("Front-end/dist"));
+    const __dirname = path.resolve();
+    app.use(express.static(path.join(__dirname, 'Front-end', 'dist')));
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(dirPath, 'Front-end', "dist", "index.html"));
-    })
+        res.sendFile(path.resolve(__dirname, 'Front-end', 'dist', 'index.html'));
+    });
 }
 
 app.listen(port, () => {

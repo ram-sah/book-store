@@ -52,7 +52,7 @@ const Navbar = () => {
         <a href="/about">About</a>
       </li>
       <li>
-        <a href="contact">Contact</a>
+        <a href="/contact">Contact</a>
       </li>
     </>
   );
@@ -90,7 +90,7 @@ const Navbar = () => {
               {navList}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">BookStore</a>
+          <a className="btn btn-ghost text-xl" href="/">BookStore</a>
         </div>
         <div className="navbar-end ">
           <div className="navbar-center hidden lg:flex">
