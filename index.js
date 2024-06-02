@@ -7,16 +7,13 @@ import cors from 'cors';
 import path from 'path';
 
 dotenv.config()
-
 const app = express()
 app.use(cors());
 
 const port = process.env.PORT || 3000;
 const URL = process.env.MongoDbURL;
-
 // Middleware to parse JSON requests
 app.use(express.json());
-
 //connect to mongodb server locally
 try {
     mongoose.connect(URL, {
@@ -27,20 +24,9 @@ try {
 } catch (error) {
     console.log("Error", error)
 }
-
 //defining routes
 app.use('/book', bookRoute);
 app.use('/user', userRoute);
-
-// //testing routes
-// app.post('/test', (req, res) => {
-//     res.status(200).json({ message: 'POST request received', data: req.body });
-// });
-
-//  app.get('/', (req, res) => {
-//     res.send("Hello there.....!")
-//  });
-
 
 //deployment
 if (process.env.NODE_ENV === 'production') {

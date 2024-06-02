@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 // import data from '../assets/data';
-
 import Cards from './Cards';
 import { Link } from 'react-router-dom'
-
 const Course = () => {
     const [book, setBook] = useState([])
-
     useEffect(() => {
         const getBook = async () => {
             try {
@@ -20,7 +17,6 @@ const Course = () => {
         }
         getBook();
     }, [])
-
     return (
         <>
             <div className='max-w-screen-2xl mx-auto md:px-20 px-4 mt-20 md:mt-40 text-center flex flex-col my-10 justify-evenly'>
@@ -40,10 +36,8 @@ const Course = () => {
                         ))
                     }
                 </div>
-
             </div>
         </>
     )
 }
-
 export default Course;
