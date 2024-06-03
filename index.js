@@ -24,6 +24,11 @@ try {
 } catch (error) {
     console.log("Error", error)
 }
+
+// Default route
+app.get('/', (req, res) => {
+    res.send('Welcome to the Book Store API');
+});
 //defining routes
 app.use('/book', bookRoute);
 app.use('/user', userRoute);
