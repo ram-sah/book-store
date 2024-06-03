@@ -15,4 +15,12 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  // Ensure all routes are served correctly by index.html
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
