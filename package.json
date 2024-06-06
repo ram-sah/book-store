@@ -1,5 +1,5 @@
 {
-  "name": "back-end",
+  "name": "bookstore",
   "version": "1.0.0",
   "description": "Mern project ",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION-false npm install --prefix Front-end && npm run build --prefix Front-end"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Front-end && npm run build --prefix Front-end"
   },
   "repository": {
     "type": "git",

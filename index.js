@@ -27,10 +27,10 @@ app.use('/user', userRoute);
 
 //deployment
 if (process.env.NODE_ENV === 'production') {
-    const __dirname = path.resolve();
-    app.use(express.static(path.join(__dirname, 'Front-end', 'dist')));
+    const dirname = path.resolve();
+    app.use(express.static('Front-end/dist'));
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'Front-end', 'dist', 'index.html'));
+        res.sendFile(path.resolve(dirname, "Front-end","dist","index.html"));
     });
 }
 
