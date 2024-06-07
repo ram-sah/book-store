@@ -6,4 +6,4 @@
 
 ## Technology Used:
 - JavaScript, MongoDB, ExpressJs, ReactJs, NodeJs, Tailwind, Vite
-### [Live application](https://e-book-app-a44e209ca5a0.herokuapp.com/)
+### [Live application](https://e-book-app-06dc4e5939ee.herokuapp.com/)
