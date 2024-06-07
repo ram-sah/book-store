@@ -45,7 +45,7 @@ const Signup = () => {
         <>
             <div className="flex h-screen  ">
                 <div id="my_modal" className=" justify-center items-center flex mx-auto">
-                    <div className="modal-box p-14 rounded-xl flex flex-col justify-center items-center dark:bg-slate-500 dark:text-white relative">
+                    <div className="modal-box p-14 rounded-2xl flex flex-col justify-center items-center dark:bg-slate-500 dark:text-white relative shadow-2xl shadow-red-200 drop-shadow-2xl">
                         <form onSubmit={handleSubmit(onSubmit)} method="dialog">
                             {/* if there is a button in form, it will close the modal */}
                             <Link

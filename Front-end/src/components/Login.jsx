@@ -35,8 +35,8 @@ const Login = () => {
     }
     return (
         <>
-            <dialog id="my_modal_3" className=" rounded-xl mx-auto shadow-xl" style={{ "width": "23rem" }}>
-                <div className="overflow-hidden p-14 flex flex-col justify-center items-center dark:bg-slate-500 dark:text-white relative">
+            <dialog id="my_modal_3" className=" rounded-xl mx-auto shadow-xl shadow-red-200 dark:bg-slate-500" style={{ "width": "23rem" }}>
+                <div className="overflow-hidden p-14 flex flex-col justify-center items-center dark:bg-slate-500 dark:text-white relative ">
                     <form onSubmit={handleSubmit(onSubmit)} method="dialog">
                         {/* if there is a button in form, it will close the modal */}
                         <Link
