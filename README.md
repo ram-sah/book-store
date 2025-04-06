@@ -11,7 +11,7 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application where users 
 - JavaScript, MongoDB, ExpressJs, ReactJs, NodeJs, Tailwind, Vite,
 - Mongoose, bcryptjs, dotenv, CORS, Nodemon, Heroku Deployment.
 
-### 👉 [Live application](https://e-book-app-06dc4e5939ee.herokuapp.com/)
+### 👉 [Live application](https://e-book-store-e07b25fe08d1.herokuapp.com) 
 
 ## Questions
 
